@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Lichess</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="left">
+            <img src="./images/menu.svg" alt="">
+            <a href="." class="logo">lichess.org</a>
+            <div class="options">
+                <a href="">PLAY</a>
+                <a href="">PUZZLES</a>
+                <a href="">LEARN</a>
+                <a href="">WATCH</a>
+                <a href="">COMMUNITY</a>
+                <a href="">TOOLS</a>
+            </div>
+            <div class="donate">
+                <a href="">DONATE</a>
+            </div>
+        </div>
+        <div class="profile">
+            <a href=""><img src="./images/searchsvg.svg" alt=""></a>
+            <a href=""><img src="./images/fightsvg.svg" alt=""></a>
+            <a href=""><img src="./images/bellsvg.svg" alt=""></a>
+            <a href="">Nikesh143</a>
+            <!-- <div class="account">Nikesh143</div> -->
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="lobby">
+        <div class="noticeboard">
+                <div class="tstreamer">
+                    <div class="isname">
+                        <img src="./images/mic.svg" alt="" width="21px" height="20.8px">
+                        <span id="sname">IM Sladgie</span>
+                    </div>
+                    <p class="desc">OH NO ! ACCELERATED KRAKEN ARENA  on lichess.org  !learn !youtube</p>
+                </div>
+                <a href="" class="str">
+                    Streamer>>
+                </a>
+            <div class="events mb">
+                <div class="eventcard">
+                    <img src="./images/tower.svg" alt="">
+                    <div class="tecard">
+                        <div class="nevent">Qatar Masters 2023</div>
+                        <div class="devent">Carlsen, Nakamura, Erigaisi • Playing right now</div>
+                    </div>
+                </div>
+                <div class="eventcard">
+                    <img src="./images/rabbit.svg" alt="">
+                    <div class="tecard">
+                        <div class="nevent">≤1700 Rapid Arena</div>
+                        <div class="devent">159 players • Playing right now</div>
+                    </div>
+                </div>
+                <div class="eventcard">
+                    <img src="./images/shield.svg" alt="">
+                    <div class="tecard">
+                        <div class="nevent">King of the Hill Shield Arena</div>
+                        <div class="devent">Battle for the King of the Hill Shield</div>
+                    </div>
+                </div>
+            </div>
+            <div class="news">
+                <div class="newscard mb">
+                    <img src="./images/pen.svg" alt="" height="20px">
+                    <a href="" class="nhead">Livaic Wins the Pavlodar Qualifier!</a>
+                    <p class="dur">2 hours ago</p>
+                </div>
+                <div class="newscard mb">
+                    <img src="./images/pen.svg" alt="" height="20px">
+                    <a href="" class="nhead">Lichess Meetup in Barcelona</a>
+                    <p class="dur">1 week ago</p>
+                </div>
+                <a href="" class="str">More >></a>
+            </div>
+        </div>
+        <div class="games">
+            <div class="gameopts">
+                <div id="current">Quick Pairing</div>
+                <div>Lobby</div>
+                <div>Correspondance</div>
+            </div>
+            <div class="matrix">
+                <div class="formats">
+                    <div class="intime">
+                        <div class="time">1+0</div>
+                        <div class="ntime">Bullet</div>
+                    </div>
+                </div>
+                <div class="formats">
+                    <div class="intime">
+                        <div class="time">2+0</div>
+                        <div class="ntime">Bullet</div>
+                    </div>
+                </div>
+                <div class="formats">
+                    <div class="intime">
+                        <div class="time">3+0</div>
+                        <div class="ntime">Blitz</div>
+                    </div>
+                </div>
+                <div class="formats">
+                    <div class="intime">
+                        <div class="time">3+2</div>
+                        <div class="ntime">Blitz</div>
+                    </div>
+                </div>
+                <div class="formats">
+                    <div class="intime">
+                        <div class="time">5+0</div>
+                        <div class="ntime">Blitz</div>
+                    </div>
+                </div>
+                <div class="formats">
+                    <div class="intime">
+                        <div class="time">5+2</div>
+                        <div class="ntime">Blitz</div>
+                    </div>
+                </div>
+                <div class="formats">
+                    <div class="intime">
+                        <div class="time">10+0</div>
+                        <div class="ntime">Rapid</div>
+                    </div>
+                </div>
+                <div class="formats">
+                    <div class="intime">
+                        <div class="time">10+5</div>
+                        <div class="ntime">Rapid</div>
+                    </div>
+                </div>
+                <div class="formats">
+                    <div class="intime">
+                        <div class="time">15+10</div>
+                        <div class="ntime">Rapid</div>
+                    </div>
+                </div>
+                <div class="formats">
+                    <div class="intime">
+                        <div class="time">30+0</div>
+                        <div class="ntime">Classical</div>
+                    </div>
+                </div>
+                <div class="formats">
+                    <div class="intime">
+                        <div class="time">30+20</div>
+                        <div class="ntime">Classical</div>
+                    </div>
+                </div>
+                <div class="formats">
+                    <div class="intime">
+                        <div class="ntime">Custom</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="table">
+            <div>
+                <button class="tbuttons">Play with the Computer</button>
+                <button class="tbuttons">Play with Friends</button>
+                <button class="tbuttons">Create a Game</button>
+            </div>
+        </div>
+        
+        <!-- second half -->
+        <div class="fetgame">
+            <div class="player1">
+                <p>
+                    <span class="gold">GM</span>
+                    Nikesh
+                </p>
+                <p>
+                    0:53
+                </p>
+            </div>
+            <div class="imgofgame">
+                <img src="./images/fetgame.png" alt="">
+            </div>
+            <div class="player2">
+                <p>
+                    <span class="gold">GM</span>
+                    Magnus
+                </p>
+                <p>
+                    1:50
+                </p>
+            </div>
+        </div>
+        <div class="cardcollection">
+            <div class="card">
+                <div class="imofcard">
+                    <p>19th Oct 2023</p>
+                    <img src="./images/card1.avif" alt="">
+                </div>
+               <div class="teofcard">
+                    <p>Livac wins the Pavlodac Qualifier!</p>
+               </div> 
+            </div>
+            <div class="card">
+                <div class="imofcard">
+                    <img src="./images/card2.png" alt="">
+                    <p>13th Sep 2023</p>
+                </div>
+                <div class="teofcard">
+                    <p>Questioning French Federation Partnership</p>
+               </div> 
+            </div>
+            <div class="card">
+                <div class="imofcard">
+                    <img src="./images/card3.png" alt="">
+                    <p>17th July 2023</p>
+                </div>
+                <div class="teofcard">
+                    <p>Questioning French Federation Partnership</p>
+               </div> 
+            </div>
+        </div>
+        <div class="puzzles">
+            <div class="player1" style="justify-content: center;">
+                <p>Puzzle of The Day</p>
+            </div>
+            <div class="imgofgame">
+                <img src="./images/puzzle.png" alt="">
+            </div>
+            <div class="player1" style="justify-content: center;">
+                <p>White to Play</p>
+            </div>
+        </div>
+        <button class="donatebutton">
+                <img src="./images/goldwing.svg" alt="" height="50px">
+                <div class="tdbutton">
+                    <p>Donate</p>
+                    <p>Become a Lichess Patreon</p>
+                </div>
+        </button>
+        <button class="donatebutton">
+            <img src="./images/tshirt.svg" alt="" height="50px">
+            <div class="tdbutton">
+                <p>Swag Store</p>
+                <p>Play Chess in Style</p>
+            </div>
+    </button>
+
+    <div class="leaderboard">
+        <div class="thead gradstyle">
+            <div>
+                <img src="./images/crown.svg" alt="">
+                Leaderboard
+            </div>
+            <a href="">More>></a>
+        </div>
+        <table class="lboard">
+            <tr>
+                <td>
+                    <img src="./images/wing.svg" alt="">
+                    <span class="gold pr">GM</span>
+                    Magnus
+                </td>
+                <td>
+                    <img src="./images/bullet.svg" class="pr"  alt="">
+                    3200
+                </td>
+                <td>
+                    <img src="./images/uparrow.svg" alt="">
+                    <span class="green">35</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/wing.svg" alt="">
+                    <span class="gold pr">GM</span>
+                    Nikesh
+                </td>
+                <td>
+                    <img src="./images/rabbit.svg" alt="" class="pr">
+                    3100
+                </td>
+                <td>
+                    <img src="./images/downarrow.svg" alt="">
+                    <span class="red">20</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/circle.svg" alt="">
+                    <span class="gold pr">GM</span>
+                    Hikaru
+                </td>
+                <td>
+                    <img src="./images/rabbit.svg" alt="" class="pr">
+                    2997
+                </td>
+                <td>
+                    <img src="./images/downarrow.svg" alt="">
+                    <span class="red">7</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/circle.svg" alt="">
+                    <span class="gold pr">GM</span>
+                    Mikhail Tal
+                </td>
+                <td>
+                    <img src="./images/fire.svg" alt="" class="pr">
+                    2854
+                </td>
+                <td>
+                    <img src="./images/uparrow.svg" alt="">
+                    <span class="green">6</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/wing.svg" alt="">
+                    <span class="gold pr">GM</span>
+                    Sahil
+                </td>
+                <td>
+                    <img src="./images/rabbit.svg" alt="" class="pr">
+                    2764
+                </td>
+                <td>
+                    <img src="./images/downarrow.svg" alt="">
+                    <span class="red">25</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/wing.svg" alt="">
+                    <span class="gold pr">GM</span>
+                    Vishy
+                </td>
+                <td>
+                    <img src="./images/fire.svg" alt="" class="pr">
+                    2975
+                </td>
+                <td>
+                    <img src="./images/downarrow.svg" alt="">
+                    <span class="red">7</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/circle.svg" alt="">
+                    <span class="gold pr">GM</span>
+                    Drunk Magnus
+                </td>
+                <td>
+                    <img src="./images/rabbit.svg" alt="" class="pr">
+                    2775
+                </td>
+                <td>
+                    <img src="./images/uparrow.svg" alt="">
+                    <span class="green">69</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/wing.svg" alt="">
+                    <span class="gold pr">GM</span>
+                    Anish
+                </td>
+                <td>
+                    <img src="./images/bullet.svg" alt="" class="pr">
+                    2969
+                </td>
+                <td>
+                    <img src="./images/downarrow.svg" alt="">
+                    <span class="red">2</span>
+                </td>
+            </tr>   
+        </table>
+    </div>
+    <div class="twinners">
+        <div class="thead gradstyle">
+            <div>
+                <img src="./images/crown.svg" alt="">
+                Tournament Winners
+            </div>
+            <a href="">More>></a>
+        </div>
+        <table class="twin">
+            <tr>
+                <td>
+                    <img src="./images/wing.svg" alt="" height="50px">
+                    <span class="gold pr">GM</span>Nikesh
+                </td>
+                <td>
+                    <a href="" class="blue">Weekly H</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/circle.svg" alt="" height="50px">
+                    <span class="gold pr">GM</span>Mikhail
+                </td>
+                <td>
+                    <a href="" class="blue">Daily H</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/wing.svg" alt="" height="50px">
+                    <span class="gold pr">GM</span>Sahil
+                </td>
+                <td>
+                    <a href="" class="blue">Yearly H</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/wing.svg" alt="" height="50px">
+                    <span class="gold pr">GM</span>Magnus
+                </td>
+                <td>
+                    <a href="" class="blue">Yearly Rapid</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/wing.svg" alt="" height="50px">
+                    <span class="gold pr">GM</span>Vishy
+                </td>
+                <td>
+                    <a href="" class="blue">2023 Summer</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/wing.svg" alt="" height="50px">
+                    <span class="gold pr">GM</span>Bobby
+                </td>
+                <td>
+                    <a href="" class="blue">Elite</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/circle.svg" alt="" height="50px">
+                    <span class="gold pr">GM</span>Nikesh
+                </td>
+                <td>
+                    <a href="" class="blue">Hourly Bullet</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="./images/wing.svg" alt="" height="50px">
+                    <span class="gold pr">GM</span>Drunk Magnus
+                </td>
+                <td>
+                    <a href="" class="blue">Chess</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="tournaments">
+        <div class="thead gradstyle">
+            <div>
+                <img src="./images/trophy.svg" alt="" width="16.8px">
+                Open tournaments
+            </div>
+            <a href="">More>></a>
+        </div>
+        <table class="tourni">
+            <tr>
+                <td><img src="./images/shield.svg" alt="">Atomic Shield</td>
+                <td>1 hour ago</td>
+                <td>6h</td>
+                <td>201</td> 
+            </tr>
+            <tr>
+                <td><img src="./images/horde.svg" alt="">Hourly horde</td>
+                <td>6 hours ago</td>
+                <td>1h</td>
+                <td>76</td> 
+            </tr>
+            <tr>
+                <td><img src="./images/fire.svg" alt="">1700 Hourly Blitz</td>
+                <td>10 hours ago</td>
+                <td>3h</td>
+                <td>95</td> 
+            </tr>
+            <tr>
+                <td><img src="./images/fire.svg" alt="">Ruy Lopez SuperBlitz</td>
+                <td>12 hours ago</td>
+                <td>2h</td>
+                <td>101</td> 
+            </tr>
+            <tr>
+                <td><img src="./images/bullet.svg" alt="">1300 Bullet</td>
+                <td>10 hours ago</td>
+                <td>3h</td>
+                <td>95</td> 
+            </tr>
+            <tr>
+                <td><img src="./images/bullet.svg" alt="">Eastern Bullet</td>
+                <td>15 hours ago</td>
+                <td>2h</td>
+                <td>75</td> 
+            </tr>
+            <tr>
+                <td><img src="./images/rabbit.svg" alt="">1500 Rapid</td>
+                <td>15 hours ago</td>
+                <td>1h</td>
+                <td>206</td> 
+            </tr>
+            <tr>
+                <td><img src="./images/flag.svg" alt="">Hourly King of the Hill</td>
+                <td>15 hours ago</td>
+                <td>1h</td>
+                <td>106</td> 
+            </tr>
+        </table>
+    </div>
+    </div>
+    <div class="footer mb">
+        <a href="">About Lichess</a>
+        <a href="">FAQ</a>
+        <a href="">Contact</a>
+        <a href="">Mobile App</a>
+        <a href="">Terms of Service</a>
+        <a href="">Source code</a>
+        <a href="">Ads</a>
+    </div>
+    <div class="socials">
+        <a href="">Mastodan</a>
+        <a href="">Twitter</a>
+        <a href="">Discord</a>
+        <a href="">Youtube</a>
+        <a href="">Twitch</a>
+    </div>
+</body>
+</html>

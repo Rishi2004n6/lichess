@@ -1,0 +1,568 @@
+html{
+    background-color: #171513;
+}
+
+*{
+    font-family: "Noto Sans",Sans-Serif;
+}
+
+
+p{
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.left , .options ,.donate ,.profile{
+    display:flex;
+}
+
+.options a{
+    /* margin-top: 21px; */
+    /* text-align: center; */
+    margin-right: 20px;
+    font-size: 15px;
+    padding-top: 18px;
+    color: #999999;
+}
+
+.logo{
+    color: #bababa;
+    font-size: 30px;
+    padding: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+}
+
+.donate a{
+    color: #bf811d;
+    padding-top: 18px;
+}
+
+.logo:hover{
+    color:#2B92E7;
+}
+
+.profile a img{
+    height: 25px;
+    /* padding-top:10px; */
+    /* margin-right: 20px; */
+}
+
+.profile{
+    gap:15px;
+}
+
+.profile a{
+    padding-top: 15px;
+    /* margin-right: 20px; */
+    font-size: 25px;
+    color: #999999;
+}
+
+.lobby{
+    max-width: 1400px;
+    /* height: 600px; */
+    display: grid;
+    /* border: 2px solid red; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 600px 260px 115px 300px;
+    gap:10px;
+    margin: auto;
+}
+
+.noticeboard{
+    /* background-color: red; */
+}
+
+.games{
+    /* background-color: green; */
+    grid-column: span 2;
+}
+
+.matrix{
+    background: #262421 url(../images/knight.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    
+    background-size: 100% 100%;
+    height: 550px;
+    gap:10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.formats{
+    display: flex;
+    border: 1px solid #404040;
+    border-radius: 5px;
+    background: rgba(186,186,186,.05);
+}
+
+.formats:hover{
+    background: rgba(214,79,0,.2);
+    cursor: pointer;
+}
+
+.intime{
+    flex: 1;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.time{
+    text-align: center;
+    color: #bababa;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    letter-spacing: 0.1em;
+    font-size: 2em;
+}
+
+.ntime{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    color: #bababa;
+    font-size: 1.75em;
+}
+
+.gameopts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 28px;
+}
+
+.gameopts div{
+    color: #999999;
+    text-align: center;
+}
+
+.gameopts :hover{
+    border-bottom: 1px solid #D0400A;
+    color: #bababa;
+}
+
+#current{
+    color: #D0400A;
+    border-bottom: 1px solid #D0400A;
+}
+
+.noticeboard{
+    margin-top: 28px;
+    overflow: hidden;
+}
+
+.tstreamer{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 0;
+}
+
+.isname{
+    display: inline-flex;
+    align-items: center;
+    min-width: 97px;
+}
+
+.desc{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    /* padding-top: 2px; */
+    /* vertical-align: middle; */
+    color: #ffffff;
+    margin: 0;
+}
+
+#sname{
+    color: #bf811d;
+}
+
+.str{
+    margin: 0px;
+    margin-bottom: 10px;
+    text-align: right;
+    color: #999999;
+    font-size: 0.75em;
+    display: block;
+}
+
+.eventcard{
+    display: flex;
+    align-items: center;
+    color: #bababa;
+    font-size: 1em;
+    padding:5px;
+    gap:10px;
+    background: linear-gradient(to bottom, hsl(37, 7%, 22%), hsl(37, 5%, 19%) 100%);
+}
+
+.nevent,.devent{
+    font-size: 0.85em;
+}
+
+.eventcard img{
+    /* flex: 1; */
+    height: 60px;
+}
+
+.newscard{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    border-bottom: solid gray 0.5px;
+}
+
+.nhead{
+    color: #bababa;
+    font-size: 1em;
+}
+
+.dur{
+    color: #999999;
+    font-size:1em;
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.table div{
+    display: flex;
+    flex-direction: column;
+}
+
+.tbuttons{
+    text-align: center;
+    background-color: #3F3D38;
+    border: 0;
+    padding: 10px;
+    color: #bababa;
+    margin: 20px 0px;
+    font-size: 1.5em;
+}
+
+.cardcollection{
+    display: flex;
+    grid-column: span 2;
+    gap: 10px;
+}
+
+.card{
+    flex: 1;
+    background-color: #302E2C;
+}
+
+.imofcard{
+    height: 75%;
+    position: relative;
+}
+
+.imofcard img{
+    max-width: 100%;
+    height: 100%;
+}
+
+.imofcard p{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 0px;
+    color: #bababa;
+    padding: 2px;
+    background-color: rgba(0, 0, 0,75%) ;
+    font-size: 1em;
+}
+
+.teofcard{
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.teofcard p{
+    margin: 0px;
+    text-align: center;
+    color: #999999;
+}
+
+.gold{
+    color: #bf811d;
+}
+
+.fetgame,.puzzles{
+    grid-row: span 2;
+}
+
+.player1,.player2{
+    color: #BABABA;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgofgame img{
+    max-width: 100%;
+}
+
+.tournaments{
+    grid-column: span 2;
+}
+
+.gradstyle{
+    background: linear-gradient(to bottom, hsl(37, 7%, 22%), hsl(37, 5%, 19%) 100%);
+}
+
+.lboard,.tourni,.twin{
+    width: 100%;
+    background-color: #262421;
+}
+
+.thead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #999999;
+    font-size: 15px;
+}
+
+.thead div img{
+    width: 20px;
+}
+
+.thead div{
+    display: flex;
+    align-items: center;
+    color: #999999;
+    font-size: 15px;
+}
+
+.thead a{
+    color: #999999;
+    font-size: 13px;
+}
+
+tr{
+    color: #999999;
+    display: grid;
+    /* justify-content: space-between; */
+    /* padding: 20px; */
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+td{
+    border: 0px;
+    padding:5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+td{
+    display: inline-flex;
+    align-items: center;
+}
+
+td img{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.tourni tr:nth-child(even),.lboard tr:nth-child(even),.twin tr:nth-child(even) {
+    background: #302e2c;
+}
+
+.green{
+    color:#6B9327
+}
+
+.red{
+    color: #BD3332;
+}
+
+.blue{
+    color: #57aeff;
+}
+
+.pr{
+    margin-right: 5px;
+}
+
+.leaderboard{
+
+}
+
+.lboard td{
+    display: flex;
+}
+
+.lboard td img{
+    margin-right: 0px;
+}
+
+.lboard tr{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.donatebutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #302E2C;
+    border: 0;
+}
+
+.tdbutton{
+    font-size: large;
+    color: #bf811d;
+}
+
+.twin tr{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.mb{
+    margin-bottom: 10px;
+}
+
+.footer{
+    margin-top: 25px;
+}
+
+.footer,.socials{
+    display: flex;
+    max-width: 100%;
+    gap:20px;
+    justify-content: center;
+}
+
+.footer a,.socials a{
+    color: #999999;
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+.left img{
+    display: none;
+    height: 40px;
+}
+
+@media (max-width:520px){
+    .logo,.donate{
+        display: none;
+    }
+    .matrix{
+        height:auto;
+    }
+    .games{
+        grid-row:1/2;
+    }
+    .tbuttons{
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+    .lobby{
+        grid-template-columns: 1fr;
+        grid-template-rows: 355px;
+    }
+    .noticeboard,.fetgame,.puzzles,.donatebutton,.leaderboard{
+        grid-column: 1/3;
+    }
+    .table{
+        grid-column: 1/3;
+    }
+}
+
+@media (max-width:845px) and (min-width:520px){
+    .matrix{
+        height:auto;
+    }
+    .lobby{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 355px 380px 1fr ;
+    }
+    .games{
+        grid-row: 1/2;
+    }
+    .puzzles{
+        grid-row:3/4;
+    }
+    .tbuttons{
+        /* font-size: 13px; */
+    }
+    .profile{
+        gap:7px;
+    }
+}
+
+@media (max-width:1257px) and (min-width:845px) {
+    .lobby{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 150px 450px 4fr 1fr 285px;
+    }
+    .table{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .games{
+        grid-column-start: 2/4;
+        grid-row: 1/3;
+    }
+    .fetgame{
+        grid-row: span 2;
+    }
+    .tbuttons{
+        margin-bottom:5px;
+        padding: 2px;
+    }
+    .cardcollection{
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }
+    .donatebutton{
+        grid-row-start: 4/5;
+    }
+    .puzzles{
+        grid-row: 5;
+    }
+    .tournaments{
+        grid-row:5/6;
+    }
+    .leaderboard{
+        grid-column-start: 2;
+    }
+}
+
+@media (max-width:1075px){
+    .options{
+        display: none;
+    }
+    .navbar img{
+        display: inline;
+    }
+}
